@@ -56,20 +56,27 @@ export default function Home() {
         ]} />
       </div>
       <div id="footer" data-section="footer" className="scroll-mt-24">
-        <FooterBase logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32Sjpo9ZLWlVS5JxRw9EagJf0Fo/design-a-simple-high-contrast-logo-for-r-1759608893032-6762ac5c.jpg" logoAlt="RealXchess Logo" columns={[
-          { title: 'Links', items: [
-            { label: 'Privacy Policy', onClick: () => alert('Privacy policy clicked') },
-            { label: 'Terms of Service', onClick: () => alert('Terms clicked') }
-          ]},
-          { title: 'Follow Us', items: [
-            { label: 'Twitter', onClick: () => alert('Twitter clicked') },
-            { label: 'LinkedIn', onClick: () => alert('LinkedIn clicked') }
-          ]},
-          { title: 'Contact', items: [
-            { label: 'Email', onClick: () => alert('Email clicked') },
-            { label: 'Support', onClick: () => alert('Support clicked') }
-          ]},
-        ]} copyrightText="© 2024 RealXchess. All Rights Reserved." onPrivacyClick={() => alert('Privacy policy clicked')} />
+        <FooterBase 
+          logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32Sjpo9ZLWlVS5JxRw9EagJf0Fo/design-a-simple-high-contrast-logo-for-r-1759608893032-6762ac5c.jpg"
+          logoWidth={100} // Adjusted based on prop schema
+          logoHeight={100} // Adjusted based on prop schema
+          columns={[
+            { title: 'Links', items: [
+              { label: 'Privacy Policy', onClick: () => alert('Privacy policy clicked') },
+              { label: 'Terms of Service', onClick: () => alert('Terms clicked') }
+            ]},
+            { title: 'Follow Us', items: [
+              { label: 'Twitter', onClick: () => alert('Twitter clicked') },
+              { label: 'LinkedIn', onClick: () => alert('LinkedIn clicked') }
+            ]},
+            { title: 'Contact', items: [
+              { label: 'Email', onClick: () => alert('Email clicked') },
+              { label: 'Support', onClick: () => alert('Support clicked') }
+            ]},
+          ]} 
+          copyrightText="© 2024 RealXchess. All Rights Reserved." 
+          onPrivacyClick={() => alert('Privacy policy clicked')} 
+        />
       </div>
     </SiteThemeProvider>
   );
